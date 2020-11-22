@@ -19,6 +19,21 @@
         </span>
       @enderror
     </div>
+
+      <div class="input-group mb-3">
+        <input id="text" type="username" placeholder="{{ __('Username') }}" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" autocomplete="off">
+        <div class="input-group-append">
+          <div class="input-group-text">
+            <span class="fas fa-envelope"></span>
+          </div>
+        </div>
+
+      @error('username')
+        <span class="invalid-feedback" role="alert">
+          <strong>{{ $message }}</strong>
+        </span>
+      @enderror
+    </div>
     <div class="input-group mb-3">
       <select id="role" type="text" class="form-control @error('role') is-invalid @enderror" name="role" value="{{ old('role') }}" autocomplete="role">
         <option value="">-- Select {{ __('Level User') }} --</option>
