@@ -52,24 +52,28 @@
                                 </a>
                             </li>
                         </li>
+
                         <li class="nav-item">
                             <a href="{{ route('guru.index') }}" class="nav-link" id="DataGuru">
                                 <i class="fas fa-users nav-icon"></i>
                                 <p>Data Guru</p>
                             </a>
                         </li>
+
                             <li class="nav-item">
                                 <a href="{{ route('kelas.index') }}" class="nav-link" id="DataKelas">
                                     <i class="fas fa-home nav-icon"></i>
                                     <p>Data Kelas</p>
                                 </a>
                             </li>
+
                             <li class="nav-item">
                                 <a href="{{ route('siswa.index') }}" class="nav-link" id="DataSiswa">
                                     <i class="fas fa-users nav-icon"></i>
                                     <p>Data Siswa</p>
                                 </a>
                             </li>
+                            
                             <li class="nav-item">
                                 <a href="{{ route('jadwal.index') }}" class="nav-link" id="DataJadwal">
                                     <i class="fas fa-calendar-alt nav-icon"></i>
